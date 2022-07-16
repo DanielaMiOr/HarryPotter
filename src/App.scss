@@ -1,0 +1,40 @@
+@media  (max-width: 1300px) {
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Vibes&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+  }
+  body{
+    color:black;
+    background-color:black;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+    background-size:cover;
+    width: 100vw;
+    height: 100vw;
+    overflow-x: hidden;
+   
+   }
+   .App{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     align-content: center;
+     overflow-y: scroll;
+    }
+::-webkit-scrollbar { 
+    width: 1em; 
+} 
+::-webkit-scrollbar-track { 
+    border:1px solid #FFC205;
+    border-radius: 100vw;
+    margin-block: 0.5em; 
+} 
+::-webkit-scrollbar-thumb{
+     background-image: url(./img/scroollHarryP.png); 
+        border: 0.1em solid #9BA3EB; border-radius: 100vw;
+}
+}
