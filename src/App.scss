@@ -15,9 +15,7 @@
     width: 100vw;
     height: 100vw;
     overflow-x: hidden;
-    
-   
-   }
+  }
    .App{
      display: flex;
      justify-content: center;
@@ -36,8 +34,8 @@
     margin-block: 0.5em; 
 } 
 ::-webkit-scrollbar-thumb{
-     background-image: url(./img/scroollHarryP.png); 
-        border: 0.1em solid #9BA3EB; border-radius: 100vw;
+    background-image: url(./img/scroollHarryP.png); 
+    border: 0.1em solid #9BA3EB; border-radius: 100vw;
 }
 .containerNav{
   display: flex;
