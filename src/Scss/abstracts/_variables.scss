@@ -1,8 +1,18 @@
 
 
-/*Colors house*/
-$color-house-gryffindor: background-color linear-gradient(135deg, #FF0000 0%, #FED482 100%);
-$color-house-slytherin: background-color linear-gradient(135deg, #1C792B 0%, #82E95E 100%);
-$color-house-ravenclaw: background-color linear-gradient(135deg, #0597B7 0%, #66D1FF 100%);
-$color-house-hufflepuff: background-color linear-gradient(135deg, #FFC700 0%, #FFF388 100%);
+
+
+/*------Colors house------*/
+$color-gryffindor: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+$color-slytherin:  linear-gradient(135deg, #1C792B 0%, #82E95E 100%);
+$color-ravenclaw:  linear-gradient(135deg, #0597B7 0%, #66D1FF 100%);
+$color-hufflepuff: linear-gradient(135deg, #FFC700 0%, #FFF388 100%);
+
+/*---------Main buttons style----------- */
+$color-buttons-main: rgba(0, 0, 0, 0.438);
+$color-buttons-float: rgba(107, 99, 181, 1);
+$border: 4px solid rgba(107, 99, 181, 1);
+
+
+
 

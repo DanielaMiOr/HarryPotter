@@ -1,0 +1,21 @@
+
+.containerButtonsMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.containerBtnMenu{
+    display: inline-flex;
+    align-items: row;
+
+}
+.btonMain{
+  @include btnMenu;
+}
+.btnFloatLeft{
+    @include floatMenu(25px 0  0 0);
+}
+.btnFloatRight{
+    @include floatMenu(0 25px  0 0);
+}

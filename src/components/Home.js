@@ -16,9 +16,9 @@ function Home() {
     return (
         <div>
 
-            <section>
-                <button className="btonStudents" onClick={studentsHogwarts}>Estudiantes</button>
-                <button className="btonStaf">STAFF</button>
+            <section className="containerButtonsMain">
+                <button className="btonMain" onClick={studentsHogwarts}>ESTUDIANTES</button>
+                <button className="btonMain">STAFF</button>
             </section>
             <section className="containerCards">
                 { students &&

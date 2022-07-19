@@ -1,3 +1,6 @@
+@import './Scss/abstracts/_variables';
+@import './Scss/abstracts/mixin';
+
 @media  (max-width: 1300px) {
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Vibes&display=swap');
   * {
@@ -8,13 +11,14 @@
   }
   body{
     color:white;
-    background-color:black;
+    background-color:#0f0f0e;
     font-family: 'Open Sans', sans-serif;
     margin-top: 40px;
     background-size:cover;
     width: 100vw;
     height: 100vw;
     overflow-x: hidden;
+    margin:0;
   }
    .App{
      display: flex;
@@ -53,4 +57,37 @@
       height: auto;
       justify-self: center;
   }
+  .containerButtonsMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.containerBtnMenu{
+    display: flex;
+    align-items: row;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+   
+
+}
+.btonMain{
+  @include btnMenu;
+}
+.btnFloatLeft{
+    @include floatMenu(25px 0  0 0);
+    image:url(./img/fav.png)
+  }
+.iconAdd{
+  width: 20px;
+  height: auto;
+  margin-left: 15px
+  
+}
+.btnFloatRight{
+    @include floatMenu(0 25px  0 0);
+}
 }

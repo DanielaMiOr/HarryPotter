@@ -1,13 +1,14 @@
 import './App.scss';
 import Home from './components/Home';
+import {RiUserAddFill} from 'react-icons/ri';
 
 function App() {
   return (
     <div className="App">
       <section className="containerNav">
                 <section className="containerBtnMenu">
-                    <button className="btnFavorites">FAVORITOS</button>
-                    <button className="btnAdd">AGREGAR
+                    <button className="btnFloatLeft">FAVORITOS</button>
+                    <button className="btnFloatRight">AGREGAR <RiUserAddFill className="iconAdd"/>
                     </button>
                 </section>
 
