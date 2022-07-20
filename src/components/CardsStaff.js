@@ -24,13 +24,15 @@ function CardsStaff(props) {
                             :
                             <p className="pStudent" id="live1">MUERTO</p>
                     }
-                    <p className="pStudent" id="student1">STAFF</p>
+                    <p className="pStudent" id="student1">/STAFF</p>
                     <button className="iconFavorites"></button>
                     </div>
-                    <p className="pBirthday">Cumpleaños:{birthday}</p>
-                    <p className="pGender">Género:{gender}</p>
-                    <p className="pColorEyes">Color de ojos:{colourEyes}</p>
-                    <p className="pColorHair">Color de pelo:{hairColour}</p>
+                    <div className="dataCard1">
+                    <p className="pBirthday"> <b>Cumpleaños:</b>{birthday}</p>
+                    <p className="pGender"> <b>Género:</b>{gender}</p>
+                    <p className="pColorEyes"> <b>Color de ojos:</b>{colourEyes}</p>
+                    <p className="pColorHair"><b>Color de pelo:</b>{hairColour}</p>
+                    </div>
                 </section>
             </section>
             

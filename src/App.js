@@ -47,35 +47,46 @@ function App() {
     <div className="App">
       <div className="boxModal">    
                     <ReactModal
-                    
+                   width="100%"
+                      
                       isOpen={showModal}
                       contentLabel="Minimal Modal Example"
                   >
-                    <button  className="closeModal" onClick={closeModal}><AiOutlineCloseCircle/></button>
-                      <form  onSubmit={addCharacter}>
-                        
-                          <p className="pModal">NOMBRE:</p>
-                          <input className="inputModal" name="userName" >
+                  <div className="containerStructure">
+                      <form  
+                      className="formModal"
+                      onSubmit={addCharacter}>
+                          <p className="addPerson">Agrega un  personaje</p>
+                          <button  className="closeModal" onClick={closeModal}><AiOutlineCloseCircle className="closeModal"/></button>
+                          <p className="pModal" id="name">NOMBRE:</p>
+                          <input className="inputModal" id="inputname" name="userName" >
                           </input>
-                          <p className="pModal">COLOR DE OJOS</p>
-                          <input className="inputModal" name="colorEyes">
+                          <p className="pModal" id="eyes">COLOR DE OJOS</p>
+                          <input className="inputModal" id="inputeyes"  name="colorEyes">
                           </input>
-                          <p className="pModal">CUMPLEAÑOS</p>
-                          <input className="inputModal" name="birthday">
+                          <p className="pModal" id="birthday">CUMPLEAÑOS</p>
+                          <input className="inputModal" id="inputbirthday" name="birthday">
                           </input>
-                          <p className="pModal">COLOR DE PELO</p>
-                          <input className="inputModal" name="hairColor"></input>
-                          <p className="pModal">GÉNERO</p>
-                          <input className="inputRadio"type="radio" value="Male" name="gender" /> Hombre
+                          <p className="pModal" id="hair">COLOR DE PELO</p>
+                          <input className="inputModal" id="inputhair" name="hairColor"></input>
+                          <p className="pModal" id="gender">GÉNERO</p>
+                          <div  id="btngender">
+                          <input className="inputRadio" id="inputgender"type="radio" value="Male" name="gender" /> Hombre
                           <input  className="inputRadio"type="radio" value="Female" name="gender" /> Mujer
-                          <p className="pMolda">POSICIÓN</p>
-                          <input className="inputRadio" type="radio" value="studentss" name="position" /> Estudiante
+                          </div>
+                          <p className="pModal" id="position">POSICIÓN</p>
+                          <div id="btnposition">
+                          <input className="inputRadio"  type="radio" value="studentss" name="position" /> Estudiante
                           <input className="inputRadio" type="radio" value="staff" name="position" /> Staff
-                          <p className="pModal">FOTOGRAFIA </p>
-                          <input className="inputModal"type="text" name="photo"></input>
-                          <input className="btnModal" type="submit" value="GUARDAR"/>
+                          </div>
+                          <p className="pModal" id="photo">FOTOGRAFIA </p>
+                          <input className="inputModal" id="inputphoto"type="text" name="photo"></input>
 
-                      </form>    
+                          <input className="btnModal"  type="submit" value="GUARDAR"/>
+                          
+
+                      </form>   
+                      </div> 
                   </ReactModal>
                   </div>
       <section className="containerNav">

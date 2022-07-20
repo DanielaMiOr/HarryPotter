@@ -88,6 +88,11 @@
 .btonMain{
   @include btnMenu;
 }
+.btonMain:hover{
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
 .btnFloatLeft{
     @include floatMenu(25px 0  0 0);
     image:url(./img/fav.png);
@@ -243,6 +248,11 @@
    .btonMain{
      @include btnMenu1;
    }
+   .btonMain:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+  }
    .btnFloatLeft{
        @include floatMenu(0 0  0 25px);
        image:url(./img/fav.png);
@@ -275,29 +285,116 @@
        margin-right: -1100px;
    }
    .boxModal{
-    display: grid;
+    display: flex;     
     width: 100%;
     height: auto;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-   flex-direction: column;
-   justify-items: center;
-   background-color: azure;
-   grid-row-gap: 1px;
-grid-column-gap: 9px;
-justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    justify-items: center;
+    background-color: azure;
+    
+   
    
   }
-  
-  .pModal{
-    color:#263238;
-    font-size: 15px;
-    display: flex;
+  .containerStructure{
+    display:inline-block
+
   }
-  .inputModal{
-    width: 300px;
-    height: 50px;
+ .ReactModal__Content{
+   width: 50%;
+   height: 60%;
+   justify-self: center;
+   margin:10% 25% 0;
+   justify-items: center;
+ }
+  .formModal{
+    display:grid;
+    width: inherit;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 10% 20% 10% 20% 10% 10% 10% 20%;
+  }
+  .addPerson{
+    grid-column:1/2;
+    grid-row: 1/2;
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
+  .closeModal{
+    width: 25px;
+    height: 25px;
+    justify-content: right;
+    border:none;
+    background: none;
+    justify-self: flex-end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #name{
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+  }
+  #inputname{
+    grid-column: 1/2;
+    grid-row:3/4;
+  }
+  #eyes{
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  #inputeyes{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #birthday{
+    grid-column:2/3 ;
+    grid-row: 2/3;
+  }
+  #inputbirthday{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  #hair{
+    grid-column:2/3 ;
+    grid-row: 4/5;
+  }
+  #inputhair{
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  #gender{
+    grid-column:1/2 ;
+    grid-row: 6/7;
+  }
+  #btngender{
     display: flex;
+    flex-direction: row;
+    gap:10px;
+    grid-column:1/2 ;
+    grid-row: 7/8;
+    height: fit-content;
+  }
+  #position{
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  #btnposition{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    grid-column:2/3 ;
+    grid-row: 7/8;
+    height: fit-content;
+  }
+  #photo{
+    grid-row:8/9 ;
+    grid-column: 1/2;
+  }
+  #inputphoto{
+    grid-column:2/3 ;
+    grid-row:8/9 ;
   }
   .btnModal{
     background: rgba(0, 0, 0, 0.6);
@@ -309,6 +406,34 @@ justify-content: space-evenly;
     justify-content: center;
     align-content: center;
     margin-top: 35px;
+    grid-column: 1/3;
+    grid-row: 9/10;
+    justify-self: center;
+    color:#F3F2F3;
   }
+  .btnModal:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease; 
+  }
+  
+  .pModal{
+    color:#263238;
+    font-size: 15px;
+    display: flex;
+  }
+  .inputModal{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+    border-style: #263238;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color:#F3F2F3;
+
+  }
+
+
    
   }

@@ -16,7 +16,7 @@ function CardsStudents(props) {
                 </div>
                 <section className="containerMainStudent">
                     
-                    <p className="nameStudent">{name}</p>
+                    <h1 className="nameStudent">{name}</h1>
                     <div className="dataStudent">
                     {
                         alive ?
@@ -24,13 +24,15 @@ function CardsStudents(props) {
                             :
                             <p className="pStudent" id="live1">MUERTO</p>
                     }
-                    <p className="pStudent" id="student1">ESTUDIANTE</p>
+                    <p className="pStudent" id="student1"> /ESTUDIANTE</p>
                     <button className="iconFavorites"></button>
                     </div>
-                    <p className="pBirthday">Cumpleaños:{birthday}</p>
-                    <p className="pGender">Género:{gender}</p>
-                    <p className="pColorEyes">Color de ojos:{colourEyes}</p>
-                    <p className="pColorHair">Color de pelo:{hairColour}</p>
+                    <div className="dataCard1">
+                    <p className="pBirthday" > <b>Cumpleaños:</b>{birthday}</p>
+                    <p className="pGender"><b>Género:</b>{gender}</p>
+                    <p className="pColorEyes"><b>Color de ojos:</b>{colourEyes}</p>
+                    <p className="pColorHair"><b>Color de pelo:</b>{hairColour}</p>
+                    </div>
                 </section>
             </section>
             
