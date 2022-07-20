@@ -40,36 +40,38 @@ function App() {
     inputRadios.forEach( inputRadio =>{
       inputRadio.checked=false;
     })
+    setShowModal(false);
   }
 
   return (
     <div className="App">
       <div className="boxModal">    
                     <ReactModal
+                    
                       isOpen={showModal}
                       contentLabel="Minimal Modal Example"
                   >
-                    <button onClick={closeModal}><AiOutlineCloseCircle/></button>
+                    <button  className="closeModal" onClick={closeModal}><AiOutlineCloseCircle/></button>
                       <form  onSubmit={addCharacter}>
                         
-                          <p className="nameModal">NOMBRE:</p>
+                          <p className="pModal">NOMBRE:</p>
                           <input className="inputModal" name="userName" >
                           </input>
-                          <p className="eyesModal">COLOR DE OJOS</p>
+                          <p className="pModal">COLOR DE OJOS</p>
                           <input className="inputModal" name="colorEyes">
                           </input>
-                          <p className="birthdayModal">CUMPLEAÑOS</p>
+                          <p className="pModal">CUMPLEAÑOS</p>
                           <input className="inputModal" name="birthday">
                           </input>
-                          <p className="hairModal">COLOR DE PELO</p>
+                          <p className="pModal">COLOR DE PELO</p>
                           <input className="inputModal" name="hairColor"></input>
-                          <p className="generModal">GÉNERO</p>
+                          <p className="pModal">GÉNERO</p>
                           <input className="inputRadio"type="radio" value="Male" name="gender" /> Hombre
                           <input  className="inputRadio"type="radio" value="Female" name="gender" /> Mujer
-                          <p className="positionMolda">POSICIÓN</p>
+                          <p className="pMolda">POSICIÓN</p>
                           <input className="inputRadio" type="radio" value="studentss" name="position" /> Estudiante
                           <input className="inputRadio" type="radio" value="staff" name="position" /> Staff
-                          <p className="photoModal">FOTOGRAFIA </p>
+                          <p className="pModal">FOTOGRAFIA </p>
                           <input className="inputModal"type="text" name="photo"></input>
                           <input className="btnModal" type="submit" value="GUARDAR"/>
 
