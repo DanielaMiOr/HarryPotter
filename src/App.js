@@ -5,9 +5,13 @@ import { BsFillBookmarkFill } from "react-icons/bs";
 import ReactModal from "react-modal"
 import { useState } from "react";
 import{AiOutlineCloseCircle} from "react-icons/ai";
+import { postCharacter } from "./components/RequestHandler"
+
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+
+
 
   const addUser = async () => {
       setShowModal(true);
@@ -17,37 +21,61 @@ function App() {
 
   }
 
+  const addCharacter = async (event) => {
+    event.preventDefault()
+    let character = {};
+    character.name=event.target.userName.value
+    character.eyeColour=event.target.colorEyes.value
+    character.dateOfBirth=event.target.birthday.value
+    character.hairColour=event.target.hairColor.value
+    character.gender=event.target.gender.value
+    character.image=event.target.photo.value
+    postCharacter(character,event.target.position.value)
+    event.target.userName.value="";
+    event.target.colorEyes.value="";
+    event.target.birthday.value="";
+    event.target.hairColor.value="";
+    event.target.photo.value="";
+    const inputRadios = Array.from( document.getElementsByClassName('inputRadio'))
+    inputRadios.forEach( inputRadio =>{
+      inputRadio.checked=false;
+    })
+  }
+
   return (
     <div className="App">
+      <div className="boxModal">    
                     <ReactModal
                       isOpen={showModal}
                       contentLabel="Minimal Modal Example"
                   >
                     <button onClick={closeModal}><AiOutlineCloseCircle/></button>
-                      <form>
+                      <form  onSubmit={addCharacter}>
                         
                           <p className="nameModal">NOMBRE:</p>
-                          <input className="inputModal" >
+                          <input className="inputModal" name="userName" >
                           </input>
                           <p className="eyesModal">COLOR DE OJOS</p>
-                          <input className="inputModal">
+                          <input className="inputModal" name="colorEyes">
                           </input>
                           <p className="birthdayModal">CUMPLEAÑOS</p>
-                          <input className="inputModal">
+                          <input className="inputModal" name="birthday">
                           </input>
                           <p className="hairModal">COLOR DE PELO</p>
-                          <input className="inputModal"></input>
+                          <input className="inputModal" name="hairColor"></input>
                           <p className="generModal">GÉNERO</p>
                           <input className="inputRadio"type="radio" value="Male" name="gender" /> Hombre
                           <input  className="inputRadio"type="radio" value="Female" name="gender" /> Mujer
                           <p className="positionMolda">POSICIÓN</p>
-                          <input className="inputRadio"type="radio" value="student" name="position" /> Estudiante
-                          <input className="inputRadio"type="radio" value="staff" name="position" /> Staff
+                          <input className="inputRadio" type="radio" value="studentss" name="position" /> Estudiante
+                          <input className="inputRadio" type="radio" value="staff" name="position" /> Staff
                           <p className="photoModal">FOTOGRAFIA </p>
-                          <input className="inputModal"type="text" ></input>
-                          <button className="btnModal">GUARDAR</button>
+                          <input className="inputModal"type="text" name="photo"></input>
+                          <input className="btnModal" type="submit" value="GUARDAR"/>
+
                       </form>    
                   </ReactModal>
+                  </div>
       <section className="containerNav">
         <div id="containerFloatSection">
           <section className="containerBtnMenu">
