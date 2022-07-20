@@ -9,5 +9,11 @@ export const getStudents = async () => {
     return res.data;
    
   };
+  export const getStaff = async () => {
+    const res = await axios.get(urlHappyPotterApi + "/staff");
+    return res.data;
+   
+  };
+
 
   

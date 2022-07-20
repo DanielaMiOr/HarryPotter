@@ -1,0 +1,137 @@
+.containerMain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+      
+}
+.containerCards{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.boxCard{
+    display: flex;
+    width: 100%;
+    height: 210px;
+    text-align: center;
+    flex-direction: column;
+}
+.cardImageContainer{
+    width: 80%;
+    height: 87px;
+    
+    border-radius: 5px 5px 0 0;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.houseGryffindor{
+    background: $color-gryffindor;
+}
+.houseSlytherin{
+    background: $color-slytherin;
+}
+.houseRavenclaw{
+    background:$color-ravenclaw;
+}
+.houseHufflepuff{
+    background: $color-hufflepuff;
+}
+.photo{
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+}
+.containerMainStudent{
+
+    display:flex;
+    width: 136px;
+    height: 92px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffff;
+    border-radius: 0 0 5px 5px;
+   
+
+}
+.nameStudent{
+    color:$color-name-student;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: fit-content;
+    margin-top: 7px;
+}
+.dataStudent{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+}
+
+#live1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10px 0 5px 10px;
+}
+.pStudent{
+    color: $color-data-info;
+    font-size: 12px;
+    text-align: left;
+    
+}
+#student1{
+    grid-column: 1/2;
+    grid-row: 2/3; 
+    margin: 5px 0  10px 10px;
+}
+.iconFavorites{
+    background-image: url(../img/fav1.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    border: none;
+    grid-row:1/3;
+    grid-column: 2/3;  
+    margin:15px 25px 0 0 ;
+   
+    
+}
+
+
+.cardImage{
+   width: 80px;
+   height: 80px;
+   overflow: hidden;
+   border-radius:50%;
+   align-self: center;
+   padding:5px 0 5px 0;
+}
+
+
+
+.pBirthday{
+    display:none;
+}
+.pGender{
+    display:none;
+}
+.pColorEyes{
+    display: none;
+}
+.pColorHair{
+    display:none;
+}
+
+
+.btnFav{
+    width: 50px;
+    height: 50px;
+    display:flex;
+}

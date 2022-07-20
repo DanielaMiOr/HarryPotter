@@ -38,7 +38,7 @@
     margin-block: 0.5em; 
 } 
 ::-webkit-scrollbar-thumb{
-    background-image: url(./img/scroollHarryP.png); 
+    background-image:  url(./img/scroollHarryP.png); 
     border: 0.1em solid #9BA3EB; border-radius: 100vw;
 }
 .containerNav{
@@ -62,32 +62,57 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    
+   
+}
+#containerFloatSection{
+ display: flex;
+//  height: 100%;
+ width: fit-content;
+ justify-content: center;
+ align-items: flex-end;
+ position: fixed;
+//  z-index:-1; 
 }
 .containerBtnMenu{
-    display: flex;
+    display:flex;
     align-items: row;
     width: 100%;
     height: auto;
-    position: fixed;
+   
     justify-content: center;
     text-align: center;
-   
-
+    z-index:2; 
+    
 }
 .btonMain{
   @include btnMenu;
 }
 .btnFloatLeft{
     @include floatMenu(25px 0  0 0);
-    image:url(./img/fav.png)
+    image:url(./img/fav.png);
+    align-items: center;
+    justify-content: center;
+  }
+  .iconFav{
+    width: 20px;
+    height: auto;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
   }
 .iconAdd{
   width: 20px;
   height: auto;
-  margin-left: 15px
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+ 
   
 }
 .btnFloatRight{
     @include floatMenu(0 25px  0 0);
+    align-items: center;
+    justify-content: center;
 }
 }

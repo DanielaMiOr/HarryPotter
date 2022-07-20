@@ -1,5 +1,5 @@
-function CardsStudents(props) {
-    const { alive, imgPerson, name, birthday, gender, colourEyes, setStudents, students, hairColour, house } = props
+function CardsStaff(props) {
+    const { alive, imgPerson, name, birthday, gender, colourEyes, hairColour, house } = props
 
     return (
         <div className="containerMain">
@@ -24,7 +24,7 @@ function CardsStudents(props) {
                             :
                             <p className="pStudent" id="live1">MUERTO</p>
                     }
-                    <p className="pStudent" id="student1">ESTUDIANTE</p>
+                    <p className="pStudent" id="student1">STAFF</p>
                     <button className="iconFavorites"></button>
                     </div>
                     <p className="pBirthday">Cumpleaños:{birthday}</p>
@@ -37,4 +37,4 @@ function CardsStudents(props) {
         </div>
     )
 }
-export default CardsStudents;
+export default CardsStaff;
