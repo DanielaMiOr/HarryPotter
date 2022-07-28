@@ -35,13 +35,14 @@ npm start``` para poder visualizar el proyecto en un navegador.
 
 
 ## 4. ¿Qué es lo que más me gusto de mi desarrollo?.
-Me gusto poder conocer una nueva librería para diseño Sass, auqnue fue un gran reto ir implementando mientras iba aprendiendo a utilizarla me pareció bastante interesante toda la funcionalidad, realización de variables y lo que propone para optimizar el código.
+Me gusto poder conocer una nueva librería para diseño Sass, aunque fue un gran reto ir implementando mientras iba aprendiendo a utilizarla, me pareció bastante interesante toda la funcionalidad, realización de variables y lo que propone para optimizar el código.
 
 
 ## 5. ¿Si hubiera tenido más tiempo que mejoraría o que hubiera hecho?.
-Me hubiera encantado poner optimizar más el código, realizar un diseño mas detallado, así como realizar pruebas unitarias de los componentes que se implementaron.
+Me hubiera encantado poner optimizar más el código, realizar un diseño más detallado, así como realizar pruebas unitarias de los componentes que se implementaron.
 Otra mejora sería cargar la información en un json server para pruebas locales, se soluciono por medio de Mock API.
 Realizar la funcionalidad de favoritos por medio de Redux.
+
 
 
 
